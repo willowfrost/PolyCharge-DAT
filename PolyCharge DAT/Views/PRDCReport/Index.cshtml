@@ -1,0 +1,277 @@
+﻿@model IEnumerable<PolyCharge_DAT.Models.Run>
+
+@{
+    ViewData["Title"] = "Pre-DC Report Index";
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Report_Options</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Run_Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Customer_Product)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Project_Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date_Run)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pre_Run_Notes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oiler_Offset)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Evap_Tank_Temp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Evap_Nozzel_Temp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Slit_Gap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Target_Thickness)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mono_Flow_Rate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mono_Pump)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wire_Inner_Speed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wire_Outer_Boat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wire_2nd_Outer_Boat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Target_OD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.E_Gun_KV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.E_Gun_mA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.E_Gun_Ar_Flow)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Magnetron_Supply)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Magnetron_Power)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Magnetron_Ar_Gas_Flow)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Magnetron_O2_Gas_Flow)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shadow_Mask)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shadow_Mask_Start_Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shadow_Mask_Movement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oiler_Faceplates)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oiler_Temperature)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oiler_Gas_Flow)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oiler_Start_Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oiler_Shift)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oiler_Step_back)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Drum_Temp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Web_Speed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Film)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Release)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bottom_Mono_Only_Layers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bottom_Inactive_Layers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active_Layers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Top_Inactive_Layers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Top_Mono_Only_Layers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total_layers)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Create Report</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Run_Number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer_Product)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Project_Number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date_Run)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pre_Run_Notes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oiler_Offset)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Evap_Tank_Temp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Evap_Nozzel_Temp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Slit_Gap)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Target_Thickness)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mono_Flow_Rate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mono_Pump)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Wire_Inner_Speed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Wire_Outer_Boat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Wire_2nd_Outer_Boat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Target_OD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.E_Gun_KV)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.E_Gun_mA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.E_Gun_Ar_Flow)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Magnetron_Supply)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Magnetron_Power)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Magnetron_Ar_Gas_Flow)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Magnetron_O2_Gas_Flow)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Shadow_Mask)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Shadow_Mask_Start_Position)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Shadow_Mask_Movement)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oiler_Faceplates)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oiler_Temperature)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oiler_Gas_Flow)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oiler_Start_Position)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oiler_Shift)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oiler_Step_back)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Drum_Temp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Web_Speed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Film)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Release)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bottom_Mono_Only_Layers)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bottom_Inactive_Layers)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Active_Layers)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Top_Inactive_Layers)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Top_Mono_Only_Layers)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Total_layers)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

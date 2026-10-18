@@ -1,0 +1,269 @@
+﻿@model PolyCharge_DAT.Models.Run
+
+@{
+    ViewData["Title"] = "Run Details";
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Run_Number)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Run_Number)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Customer_Product)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Customer_Product)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Project_Number)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Project_Number)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Date_Run)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date_Run)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pre_Run_Notes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pre_Run_Notes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oiler_Offset)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oiler_Offset)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Evap_Tank_Temp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Evap_Tank_Temp)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Evap_Nozzel_Temp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Evap_Nozzel_Temp)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Slit_Gap)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Slit_Gap)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Target_Thickness)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Target_Thickness)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mono_Flow_Rate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mono_Flow_Rate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mono_Pump)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mono_Pump)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Wire_Inner_Speed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Wire_Inner_Speed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Wire_Outer_Boat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Wire_Outer_Boat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Wire_2nd_Outer_Boat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Wire_2nd_Outer_Boat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Target_OD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Target_OD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.E_Gun_KV)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.E_Gun_KV)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.E_Gun_mA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.E_Gun_mA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.E_Gun_Ar_Flow)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.E_Gun_Ar_Flow)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Magnetron_Supply)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Magnetron_Supply)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Magnetron_Power)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Magnetron_Power)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Magnetron_Ar_Gas_Flow)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Magnetron_Ar_Gas_Flow)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Magnetron_O2_Gas_Flow)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Magnetron_O2_Gas_Flow)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Shadow_Mask)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Shadow_Mask)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Shadow_Mask_Start_Position)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Shadow_Mask_Start_Position)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Shadow_Mask_Movement)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Shadow_Mask_Movement)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oiler_Faceplates)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oiler_Faceplates)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oiler_Temperature)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oiler_Temperature)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oiler_Gas_Flow)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oiler_Gas_Flow)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oiler_Start_Position)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oiler_Start_Position)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oiler_Shift)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oiler_Shift)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oiler_Step_back)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oiler_Step_back)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Drum_Temp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Drum_Temp)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Web_Speed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Web_Speed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Film)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Film)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Release)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Release)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Bottom_Mono_Only_Layers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Bottom_Mono_Only_Layers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Bottom_Inactive_Layers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Bottom_Inactive_Layers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Active_Layers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Active_Layers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Top_Inactive_Layers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Top_Inactive_Layers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Top_Mono_Only_Layers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Top_Mono_Only_Layers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Total_layers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Total_layers)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,59 @@
+﻿@model PolyCharge_DAT.Models.Issue
+
+@{
+    ViewData["Title"] = "Issue Details";
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Issue_CreatedBy)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Issue_CreatedBy)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Issue_Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Issue_Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Issue_CreatedOn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Issue_CreatedOn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Issue_ClosedBy)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Issue_ClosedBy)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Issue_Resolution)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Issue_Resolution)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Issue_ClosedOn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Issue_ClosedOn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Issue_Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Issue_Status)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

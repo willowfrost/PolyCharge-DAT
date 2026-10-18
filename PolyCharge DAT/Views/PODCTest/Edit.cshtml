@@ -1,0 +1,95 @@
+﻿@model PolyCharge_DAT.Models.PODCTest
+
+@{
+    ViewData["Title"] = "Post-DC Test Edit";
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Run_Number" class="control-label"></label>
+                <input asp-for="Run_Number" class="form-control" />
+                <span asp-validation-for="Run_Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card" class="control-label"></label>
+                <input asp-for="Card" class="form-control" />
+                <span asp-validation-for="Card" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lane" class="control-label"></label>
+                <input asp-for="Lane" class="form-control" />
+                <span asp-validation-for="Lane" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Note_A" class="control-label"></label>
+                <input asp-for="Note_A" class="form-control" />
+                <span asp-validation-for="Note_A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Note_B" class="control-label"></label>
+                <input asp-for="Note_B" class="form-control" />
+                <span asp-validation-for="Note_B" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date_Time" class="control-label"></label>
+                <input asp-for="Date_Time" class="form-control" />
+                <span asp-validation-for="Date_Time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Series" class="control-label"></label>
+                <input asp-for="Series" class="form-control" />
+                <span asp-validation-for="Series" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Part_Size" class="control-label"></label>
+                <input asp-for="Part_Size" class="form-control" />
+                <span asp-validation-for="Part_Size" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cap_120Hz_uF" class="control-label"></label>
+                <input asp-for="Cap_120Hz_uF" class="form-control" />
+                <span asp-validation-for="Cap_120Hz_uF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cap_1kHz_uF" class="control-label"></label>
+                <input asp-for="Cap_1kHz_uF" class="form-control" />
+                <span asp-validation-for="Cap_1kHz_uF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DF_1kHz" class="control-label"></label>
+                <input asp-for="DF_1kHz" class="form-control" />
+                <span asp-validation-for="DF_1kHz" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ESR1_10kHZ_mOhm" class="control-label"></label>
+                <input asp-for="ESR1_10kHZ_mOhm" class="form-control" />
+                <span asp-validation-for="ESR1_10kHZ_mOhm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ESR2_20kHZ_mOhm" class="control-label"></label>
+                <input asp-for="ESR2_20kHZ_mOhm" class="form-control" />
+                <span asp-validation-for="ESR2_20kHZ_mOhm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ESR3_100kHz_mOhm" class="control-label"></label>
+                <input asp-for="ESR3_100kHz_mOhm" class="form-control" />
+                <span asp-validation-for="ESR3_100kHz_mOhm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

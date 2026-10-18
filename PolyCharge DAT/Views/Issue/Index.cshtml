@@ -1,0 +1,71 @@
+﻿@model IEnumerable<PolyCharge_DAT.Models.Issue>
+
+@{
+    ViewData["Title"] = "Issue Index";
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<p>
+    <a asp-action="Create">Create New Issue</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Navigation_Options</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue_CreatedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue_Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue_CreatedOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue_ClosedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue_Resolution)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue_ClosedOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue_Status)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Issue_CreatedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Issue_Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Issue_CreatedOn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Issue_ClosedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Issue_Resolution)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Issue_ClosedOn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Issue_Status)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,127 @@
+﻿@model IEnumerable<PolyCharge_DAT.Models.PODCTest>
+
+@{
+    ViewData["Title"] = "Post-DC Test Index";
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div class="container">
+    <div class="mb-3 mt-3">
+        <form method="post" enctype="multipart/form-data" asp-controller="PODCTest" asp-action="Upload">
+            <div class="mb-3">
+                <label class="form-label">Upload CSV Data File</label>
+                <input type="file" name="file" accept=".csv" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<p>
+    <a asp-action="Create">Manually Create New Record</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Navigation_Options</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Run_Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Card)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lane)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Note_A)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Note_B)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date_Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Series)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Part_Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cap_120Hz_uF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cap_1kHz_uF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DF_1kHz)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ESR1_10kHZ_mOhm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ESR2_20kHZ_mOhm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ESR3_100kHz_mOhm)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Run_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Card)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lane)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note_B)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date_Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Series)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Part_Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cap_120Hz_uF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cap_1kHz_uF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DF_1kHz)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ESR1_10kHZ_mOhm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ESR2_20kHZ_mOhm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ESR3_100kHz_mOhm)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

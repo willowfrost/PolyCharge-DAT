@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAApQk5gB3LWEGa9PcUQSnzigAAAAACAAAAAAAQZgAAAAEAACAAAAD+8sCj2VkGfaUEmu7cJLUAKTPotPlNs/2proif4us0bAAAAAAOgAAAAAIAACAAAADVk9hhwud0eTkAW0s30CCSD+pN3mkhNwaoLGt1AK4AeoAAAAA7TdM0bDi0QJ86F4oimMKyHn3CrhqZkjW6+LFbWQicm0P/0ZK3/lTnatVesOrMuNiyep11+QwOmRB4O9qs3Lycn0FvQ/fKhiPMccZq8nYgWZaB/3BjburpguL+cKS+77C53ZAwTd3oLLTKgwCtkJ/4T2b4eKGAFlf6vIFz+5IJhEAAAADVieP/DFz/SR2RYh3VoonD9lcMc7S2uSZ5IKI0yjw2qrkKqPvskojyyaxZWztlBro1gApTKv/zIEAgProBzr2o</EncryptedPassword>
+    <History>True|2023-06-05T19:16:35.2708391Z;False|2023-06-05T12:13:14.3814381-07:00;False|2023-06-05T12:04:00.6256742-07:00;False|2023-06-05T11:55:03.6505720-07:00;False|2023-06-05T11:52:10.6300229-07:00;False|2023-06-05T11:46:22.5539308-07:00;False|2023-06-05T11:35:00.7185292-07:00;False|2023-06-05T09:58:34.1520248-07:00;False|2023-06-05T09:31:28.3550168-07:00;False|2023-06-05T09:24:19.4329162-07:00;False|2023-06-05T09:18:30.0623397-07:00;False|2023-06-05T09:13:04.1706318-07:00;True|2023-05-30T10:56:59.9242115-07:00;False|2023-05-30T10:49:54.9129248-07:00;False|2023-05-30T10:37:23.1193985-07:00;True|2023-05-16T12:47:11.4711153-07:00;False|2023-05-16T12:44:34.7489450-07:00;True|2023-05-08T09:25:30.7119307-07:00;False|2023-05-08T09:21:52.9819951-07:00;True|2023-04-22T08:42:09.5320806-07:00;True|2023-04-19T06:50:46.7510400-07:00;True|2023-04-18T15:51:01.9646963-07:00;True|2023-04-18T15:08:22.6999248-07:00;True|2023-04-18T14:54:05.1808607-07:00;True|2023-04-18T14:46:18.5205089-07:00;True|2023-04-18T14:43:43.7028750-07:00;False|2023-04-18T14:37:29.7516568-07:00;True|2023-04-18T14:26:28.0771516-07:00;True|2023-04-18T14:08:07.2967022-07:00;True|2023-04-18T14:03:54.2711963-07:00;True|2023-04-18T14:01:54.5121535-07:00;True|2023-04-18T13:58:45.4200304-07:00;True|2023-04-18T13:54:54.3020310-07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:polycharge-server.database.windows.net,1433%3bInitial Catalog=PolyCharge_DAT%3bUser Id=admin-sql%40polycharge-server%3bPassword=PolyChargeDB24680%2a</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="SeedUserPW">
+      <Value>Data Source=tcp:polycharge-server.database.windows.net,1433%3bInitial Catalog=PolyCharge_DAT%3bUser Id=admin-sql%40polycharge-server%3bPassword=PolyChargeDB24680%2a</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="PolyCharge_DAT.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:polycharge-server.database.windows.net,1433%3bInitial Catalog=PolyCharge_DAT%3bUser Id=admin-sql%40polycharge-server%3bPassword=PolyChargeDB24680%2a</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

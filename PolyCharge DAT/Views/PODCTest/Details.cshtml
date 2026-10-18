@@ -1,0 +1,101 @@
+﻿@model PolyCharge_DAT.Models.PODCTest
+
+@{
+    ViewData["Title"] = "Post-DC Test Details";
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Run_Number)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Run_Number)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Card)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Card)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Lane)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Lane)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Note_A)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Note_A)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Note_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Note_B)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Date_Time)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date_Time)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Series)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Series)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Part_Size)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Part_Size)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cap_120Hz_uF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cap_120Hz_uF)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cap_1kHz_uF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cap_1kHz_uF)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DF_1kHz)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DF_1kHz)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ESR1_10kHZ_mOhm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ESR1_10kHZ_mOhm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ESR2_20kHZ_mOhm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ESR2_20kHZ_mOhm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ESR3_100kHz_mOhm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ESR3_100kHz_mOhm)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

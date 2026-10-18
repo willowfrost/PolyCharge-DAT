@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="PolyChargeDAT" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\willo\\source\\repos\\PolyCharge\ DAT\\PolyCharge\ DAT\\obj\\Release\\net7\.0\\win-x86\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="PolyCharge_DAT.Data.ApplicationDbContext" description="" value="Data Source=tcp:polycharge-server.database.windows.net,1433;Initial Catalog=PolyCharge_DAT;User Id=admin-sql@polycharge-server;Password=PolyChargeDB24680*" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\willo\\source\\repos\\PolyCharge\ DAT\\PolyCharge\ DAT\\obj\\Release\\net7\.0\\win-x86\\PubTmp\\EFSQLScripts\\PolyCharge_DAT\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>

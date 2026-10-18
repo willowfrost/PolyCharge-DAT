@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Application Dashboard";
+}
+<h4>@ViewData["Title"]</h4>
+
+@if(User.IsInRole("admin"))
+{
+    <h5><a asp-area="Identity" asp-page="/Account/Register">Register New User</a></h5>
+    <h5><a asp-controller="Run" asp-action="Index">Manage Run Data</a></h5>
+    <h5><a asp-controller="PRDCTest" asp-action="Index">Manage Pre-DC Test Data</a></h5>
+    <h5><a asp-controller="PODCTest" asp-action="Index">Manage Post-DC Test Data</a></h5>
+    <h5><a asp-controller="POBITest" asp-action="Index">Manage Post-BI Test Data</a></h5>
+    <h5><a asp-controller="Issue" asp-action="Index">Manage Issues</a></h5>
+    <br/>
+}
+<h5><a asp-controller="PRDCReport" asp-action="Index">Create Pre-DC Report</a></h5>
+<h5><a asp-controller="PODCReport" asp-action="Index">Create Post-DC Report</a></h5>
+<h5><a asp-controller="POBIReport" asp-action="Index">Create Post-BI Report</a></h5>
+<h5><a asp-controller="Issue" asp-action="Create">Create Issue</a></h5>
+
+

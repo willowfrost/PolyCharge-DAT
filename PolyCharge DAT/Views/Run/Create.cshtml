@@ -1,0 +1,234 @@
+﻿@model PolyCharge_DAT.Models.Run
+
+@{
+    ViewData["Title"] = "Create New Run";
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Run_Number" class="control-label"></label>
+                <input asp-for="Run_Number" class="form-control" />
+                <span asp-validation-for="Run_Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer_Product" class="control-label"></label>
+                <input asp-for="Customer_Product" class="form-control" />
+                <span asp-validation-for="Customer_Product" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Project_Number" class="control-label"></label>
+                <input asp-for="Project_Number" class="form-control" />
+                <span asp-validation-for="Project_Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date_Run" class="control-label"></label>
+                <input asp-for="Date_Run" class="form-control" />
+                <span asp-validation-for="Date_Run" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pre_Run_Notes" class="control-label"></label>
+                <input asp-for="Pre_Run_Notes" class="form-control" />
+                <span asp-validation-for="Pre_Run_Notes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Oiler_Offset" class="control-label"></label>
+                <input asp-for="Oiler_Offset" class="form-control" />
+                <span asp-validation-for="Oiler_Offset" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Evap_Tank_Temp" class="control-label"></label>
+                <input asp-for="Evap_Tank_Temp" class="form-control" />
+                <span asp-validation-for="Evap_Tank_Temp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Evap_Nozzel_Temp" class="control-label"></label>
+                <input asp-for="Evap_Nozzel_Temp" class="form-control" />
+                <span asp-validation-for="Evap_Nozzel_Temp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Slit_Gap" class="control-label"></label>
+                <input asp-for="Slit_Gap" class="form-control" />
+                <span asp-validation-for="Slit_Gap" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Target_Thickness" class="control-label"></label>
+                <input asp-for="Target_Thickness" class="form-control" />
+                <span asp-validation-for="Target_Thickness" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mono_Flow_Rate" class="control-label"></label>
+                <input asp-for="Mono_Flow_Rate" class="form-control" />
+                <span asp-validation-for="Mono_Flow_Rate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mono_Pump" class="control-label"></label>
+                <input asp-for="Mono_Pump" class="form-control" />
+                <span asp-validation-for="Mono_Pump" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Wire_Inner_Speed" class="control-label"></label>
+                <input asp-for="Wire_Inner_Speed" class="form-control" />
+                <span asp-validation-for="Wire_Inner_Speed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Wire_Outer_Boat" class="control-label"></label>
+                <input asp-for="Wire_Outer_Boat" class="form-control" />
+                <span asp-validation-for="Wire_Outer_Boat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Wire_2nd_Outer_Boat" class="control-label"></label>
+                <input asp-for="Wire_2nd_Outer_Boat" class="form-control" />
+                <span asp-validation-for="Wire_2nd_Outer_Boat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Target_OD" class="control-label"></label>
+                <input asp-for="Target_OD" class="form-control" />
+                <span asp-validation-for="Target_OD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="E_Gun_KV" class="control-label"></label>
+                <input asp-for="E_Gun_KV" class="form-control" />
+                <span asp-validation-for="E_Gun_KV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="E_Gun_mA" class="control-label"></label>
+                <input asp-for="E_Gun_mA" class="form-control" />
+                <span asp-validation-for="E_Gun_mA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="E_Gun_Ar_Flow" class="control-label"></label>
+                <input asp-for="E_Gun_Ar_Flow" class="form-control" />
+                <span asp-validation-for="E_Gun_Ar_Flow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Magnetron_Supply" class="control-label"></label>
+                <input asp-for="Magnetron_Supply" class="form-control" />
+                <span asp-validation-for="Magnetron_Supply" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Magnetron_Power" class="control-label"></label>
+                <input asp-for="Magnetron_Power" class="form-control" />
+                <span asp-validation-for="Magnetron_Power" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Magnetron_Ar_Gas_Flow" class="control-label"></label>
+                <input asp-for="Magnetron_Ar_Gas_Flow" class="form-control" />
+                <span asp-validation-for="Magnetron_Ar_Gas_Flow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Magnetron_O2_Gas_Flow" class="control-label"></label>
+                <input asp-for="Magnetron_O2_Gas_Flow" class="form-control" />
+                <span asp-validation-for="Magnetron_O2_Gas_Flow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Shadow_Mask" class="control-label"></label>
+                <input asp-for="Shadow_Mask" class="form-control" />
+                <span asp-validation-for="Shadow_Mask" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Shadow_Mask_Start_Position" class="control-label"></label>
+                <input asp-for="Shadow_Mask_Start_Position" class="form-control" />
+                <span asp-validation-for="Shadow_Mask_Start_Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Shadow_Mask_Movement" class="control-label"></label>
+                <input asp-for="Shadow_Mask_Movement" class="form-control" />
+                <span asp-validation-for="Shadow_Mask_Movement" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Oiler_Faceplates" class="control-label"></label>
+                <input asp-for="Oiler_Faceplates" class="form-control" />
+                <span asp-validation-for="Oiler_Faceplates" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Oiler_Temperature" class="control-label"></label>
+                <input asp-for="Oiler_Temperature" class="form-control" />
+                <span asp-validation-for="Oiler_Temperature" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Oiler_Gas_Flow" class="control-label"></label>
+                <input asp-for="Oiler_Gas_Flow" class="form-control" />
+                <span asp-validation-for="Oiler_Gas_Flow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Oiler_Start_Position" class="control-label"></label>
+                <input asp-for="Oiler_Start_Position" class="form-control" />
+                <span asp-validation-for="Oiler_Start_Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Oiler_Shift" class="control-label"></label>
+                <input asp-for="Oiler_Shift" class="form-control" />
+                <span asp-validation-for="Oiler_Shift" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Oiler_Step_back" class="control-label"></label>
+                <input asp-for="Oiler_Step_back" class="form-control" />
+                <span asp-validation-for="Oiler_Step_back" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Drum_Temp" class="control-label"></label>
+                <input asp-for="Drum_Temp" class="form-control" />
+                <span asp-validation-for="Drum_Temp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Web_Speed" class="control-label"></label>
+                <input asp-for="Web_Speed" class="form-control" />
+                <span asp-validation-for="Web_Speed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Film" class="control-label"></label>
+                <input asp-for="Film" class="form-control" />
+                <span asp-validation-for="Film" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Release" class="control-label"></label>
+                <input asp-for="Release" class="form-control" />
+                <span asp-validation-for="Release" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bottom_Mono_Only_Layers" class="control-label"></label>
+                <input asp-for="Bottom_Mono_Only_Layers" class="form-control" />
+                <span asp-validation-for="Bottom_Mono_Only_Layers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bottom_Inactive_Layers" class="control-label"></label>
+                <input asp-for="Bottom_Inactive_Layers" class="form-control" />
+                <span asp-validation-for="Bottom_Inactive_Layers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Active_Layers" class="control-label"></label>
+                <input asp-for="Active_Layers" class="form-control" />
+                <span asp-validation-for="Active_Layers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Top_Inactive_Layers" class="control-label"></label>
+                <input asp-for="Top_Inactive_Layers" class="form-control" />
+                <span asp-validation-for="Top_Inactive_Layers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Top_Mono_Only_Layers" class="control-label"></label>
+                <input asp-for="Top_Mono_Only_Layers" class="form-control" />
+                <span asp-validation-for="Top_Mono_Only_Layers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Total_layers" class="control-label"></label>
+                <input asp-for="Total_layers" class="form-control" />
+                <span asp-validation-for="Total_layers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
